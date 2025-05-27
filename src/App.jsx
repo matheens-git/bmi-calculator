@@ -49,9 +49,9 @@ const App = () => {
         <div className="data">
           <h5>{error}</h5>
             <label htmlFor="height">height:</label>
-            <input type="text" placeholder='in cm' id="height" value={height} onChange={(Event)=>(setHeight(Event.target.value))} />
+            <input type="text"  id="height" value={height} onChange={(Event)=>(setHeight(Event.target.value))} />
             <label htmlFor="weight">weight:</label>
-            <input type="text" placeholder='in kg'  id="weight" value={weight} onChange={(Event)=>(setWeight(Event.target.value))}/>
+            <input type="text"  id="weight" value={weight} onChange={(Event)=>(setWeight(Event.target.value))}/>
             <div id="btn-div">
             <button id='calculate-btn' onClick={calculateBMI}>calculate</button>
             <button id='clear-btn' onClick={clearBMI}>clear</button>
